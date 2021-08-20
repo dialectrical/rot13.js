@@ -11,7 +11,7 @@ rot13.js is a simple [ROT13 cypher](https://en.wikipedia.org/wiki/ROT13) built i
 
 ## How to navigate this project.
 
-The majority of the project's code is found in `src\components`.
+The majority of the project's code is found in `src/components`.
 * `/src/components/cypherMaker.js` - contains `cypherMaker`, which generates a cypher by taking a given alphabet array, `input`, and rotating it by a given amount, `rot`, of positions. It is currently hard coded to `13`.
 
 * `src/components/decoder.js` - imports `cypherMaker`, contains an array, `ALPHA` of the standard English alphabet, and the function `inputDecoder`. `inputDecoder` takes a given string, `input`, and integer, `rot`, sends integer `rot` and array `ALPHA` to `cypherMaker` in order to generate a cypher, and then maps through `input` in order to generate an output encrypted or solved by the ROT cypher as `inputKey`.
